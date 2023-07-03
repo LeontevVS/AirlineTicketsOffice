@@ -1,0 +1,242 @@
+USE [master]
+GO
+/****** Object:  Database [AirlinesTicketsOffice]    Script Date: 11.10.2022 21:42:34 ******/
+CREATE DATABASE [AirlinesTicketsOffice]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'AirlinesTicketsOffice', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\AirlinesTicketsOffice.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'AirlinesTicketsOffice_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\AirlinesTicketsOffice.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+ WITH CATALOG_COLLATION = DATABASE_DEFAULT
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET COMPATIBILITY_LEVEL = 140
+GO
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [AirlinesTicketsOffice].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET ANSI_NULL_DEFAULT OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET ANSI_NULLS OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET ANSI_PADDING OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET ANSI_WARNINGS OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET ARITHABORT OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET AUTO_CLOSE ON 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET AUTO_SHRINK OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET AUTO_UPDATE_STATISTICS ON 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET CURSOR_DEFAULT  GLOBAL 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET NUMERIC_ROUNDABORT OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET QUOTED_IDENTIFIER OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET RECURSIVE_TRIGGERS OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET  DISABLE_BROKER 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET TRUSTWORTHY OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET PARAMETERIZATION SIMPLE 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET HONOR_BROKER_PRIORITY OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET RECOVERY SIMPLE 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET  MULTI_USER 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET PAGE_VERIFY CHECKSUM  
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET DB_CHAINING OFF 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET TARGET_RECOVERY_TIME = 60 SECONDS 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET DELAYED_DURABILITY = DISABLED 
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET ACCELERATED_DATABASE_RECOVERY = OFF  
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET QUERY_STORE = OFF
+GO
+USE [AirlinesTicketsOffice]
+GO
+/****** Object:  Table [dbo].[Crews]    Script Date: 11.10.2022 21:42:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Crews](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_Crews] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Liners]    Script Date: 11.10.2022 21:42:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Liners](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[AirlinerName] [nvarchar](50) NOT NULL,
+	[PassengerCapacity] [int] NOT NULL,
+	[ProductionDate] [date] NOT NULL,
+ CONSTRAINT [PK_Liners] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Passages]    Script Date: 11.10.2022 21:42:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Passages](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[Liner_id] [int] NULL,
+	[PassageNumber] [int] NOT NULL,
+	[Title] [nvarchar](50) NOT NULL,
+	[Date] [datetime] NOT NULL,
+	[Arrival] [datetime] NOT NULL,
+	[Crew_id] [int] NULL,
+ CONSTRAINT [PK_Passages] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Seats]    Script Date: 11.10.2022 21:42:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Seats](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[Class] [nvarchar](50) NOT NULL,
+	[Chair] [nchar](1) NOT NULL,
+	[Liner_Id] [int] NULL,
+	[Row] [int] NOT NULL,
+ CONSTRAINT [PK_Seats] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Staff]    Script Date: 11.10.2022 21:42:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Staff](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](50) NOT NULL,
+	[Post] [nvarchar](50) NOT NULL,
+	[Crew_id] [int] NULL,
+ CONSTRAINT [PK_Staff] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Tickets]    Script Date: 11.10.2022 21:42:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Tickets](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[Passage_id] [int] NULL,
+	[PassangerName] [nvarchar](50) NOT NULL,
+	[Date] [datetime] NOT NULL,
+	[Passport] [nchar](11) NOT NULL,
+	[PassportDate] [date] NOT NULL,
+	[Till] [int] NOT NULL,
+	[TicketNumber] [int] NOT NULL,
+	[Price] [decimal](12, 2) NOT NULL,
+	[Registrar_id] [int] NULL,
+	[Seat_id] [int] NULL,
+ CONSTRAINT [PK_Ticket] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Users]    Script Date: 11.10.2022 21:42:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Users](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](50) NOT NULL,
+	[Password] [nvarchar](20) NOT NULL,
+	[Role] [nvarchar](20) NOT NULL,
+ CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Passages]  WITH CHECK ADD  CONSTRAINT [FK_Passages_Crews] FOREIGN KEY([Crew_id])
+REFERENCES [dbo].[Crews] ([id])
+GO
+ALTER TABLE [dbo].[Passages] CHECK CONSTRAINT [FK_Passages_Crews]
+GO
+ALTER TABLE [dbo].[Passages]  WITH CHECK ADD  CONSTRAINT [FK_Passages_Liners] FOREIGN KEY([Liner_id])
+REFERENCES [dbo].[Liners] ([id])
+GO
+ALTER TABLE [dbo].[Passages] CHECK CONSTRAINT [FK_Passages_Liners]
+GO
+ALTER TABLE [dbo].[Seats]  WITH CHECK ADD  CONSTRAINT [FK_Seats_Liners] FOREIGN KEY([Liner_Id])
+REFERENCES [dbo].[Liners] ([id])
+GO
+ALTER TABLE [dbo].[Seats] CHECK CONSTRAINT [FK_Seats_Liners]
+GO
+ALTER TABLE [dbo].[Staff]  WITH CHECK ADD  CONSTRAINT [FK_Staff_Crews] FOREIGN KEY([Crew_id])
+REFERENCES [dbo].[Crews] ([id])
+GO
+ALTER TABLE [dbo].[Staff] CHECK CONSTRAINT [FK_Staff_Crews]
+GO
+ALTER TABLE [dbo].[Tickets]  WITH CHECK ADD  CONSTRAINT [FK_Ticket_Passages] FOREIGN KEY([Passage_id])
+REFERENCES [dbo].[Passages] ([id])
+GO
+ALTER TABLE [dbo].[Tickets] CHECK CONSTRAINT [FK_Ticket_Passages]
+GO
+ALTER TABLE [dbo].[Tickets]  WITH CHECK ADD  CONSTRAINT [FK_Ticket_Users] FOREIGN KEY([Registrar_id])
+REFERENCES [dbo].[Users] ([id])
+GO
+ALTER TABLE [dbo].[Tickets] CHECK CONSTRAINT [FK_Ticket_Users]
+GO
+ALTER TABLE [dbo].[Tickets]  WITH CHECK ADD  CONSTRAINT [FK_Tickets_Seats] FOREIGN KEY([Seat_id])
+REFERENCES [dbo].[Seats] ([id])
+GO
+ALTER TABLE [dbo].[Tickets] CHECK CONSTRAINT [FK_Tickets_Seats]
+GO
+USE [master]
+GO
+ALTER DATABASE [AirlinesTicketsOffice] SET  READ_WRITE 
+GO

@@ -1,0 +1,161 @@
+﻿<Window x:Class="AirlineTicketsOffice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirlineTicketsOffice"
+        mc:Ignorable="d"
+        Title="Airline Office" Height="450" Width="800" MinHeight="450" MinWidth="800" 
+        WindowState="Maximized" Closing="Window_Closing" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="31"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+            <Button x:Name="Btn_Create" Content="Создать" Margin="15,3,15,3" Click="Btn_Create_Click"/>
+            <Button x:Name="btnDelete" Content="Удалить" Margin="0,3,15,3" Click="btnDelete_Click"/>
+        </StackPanel>
+        <TabControl x:Name="TabCtrl" SelectionChanged="TabCtrl_SelectionChanged">
+            <TabItem x:Name="TabTickets" Header="Билеты">
+                <DataGrid x:Name="DGridTickets" Grid.Row="0" AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid.ItemContainerStyle>
+                        <Style TargetType="DataGridRow">
+                            <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
+                        </Style>
+                    </DataGrid.ItemContainerStyle>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ФИО пассажира" Binding="{Binding PassangerName}" Width="*"/>
+                        <DataGridTextColumn Header="Номер рейса" Binding="{Binding Passage.PassageNumber}" Width="*"/>
+                        <DataGridTextColumn Header="Название рейса" Binding="{Binding Passage.Title}" Width="*"/>
+                        <DataGridTextColumn Header="Дата отправления" Width="*">
+                            <DataGridTextColumn.Binding>
+                                <MultiBinding StringFormat="{}{0}.{1}.{2} {3}:{4}">
+                                    <Binding Path="Passage.Date.Day"/>
+                                    <Binding Path="Passage.Date.Month"/>
+                                    <Binding Path="Passage.Date.Year"/>
+                                    <Binding Path="Passage.Date.Hour"/>
+                                    <Binding Path="Passage.Date.Minute"/>
+                                </MultiBinding>
+                            </DataGridTextColumn.Binding>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Дата прибытия" Width="*">
+                            <DataGridTextColumn.Binding>
+                                <MultiBinding StringFormat="{}{0}.{1}.{2} {3}:{4}">
+                                    <Binding Path="Passage.Arrival.Day"/>
+                                    <Binding Path="Passage.Arrival.Month"/>
+                                    <Binding Path="Passage.Arrival.Year"/>
+                                    <Binding Path="Passage.Arrival.Hour"/>
+                                    <Binding Path="Passage.Arrival.Minute"/>
+                                </MultiBinding>
+                            </DataGridTextColumn.Binding>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Номер билета" Binding="{Binding TicketNumber}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem x:Name="TabPassages" Header="Рейсы">
+                <DataGrid x:Name="DGridPassages" Grid.Row="0" AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid.ItemContainerStyle>
+                        <Style TargetType="DataGridRow">
+                            <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
+                        </Style>
+                    </DataGrid.ItemContainerStyle>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding PassageNumber}" Width="*" Header="Номер рейса"/>
+                        <DataGridTextColumn Binding="{Binding Title}" Width="*" Header="Название рейса"/>
+                        <DataGridTextColumn Width="*" Header="Дата отправления">
+                            <DataGridTextColumn.Binding>
+                                <MultiBinding StringFormat="{}{0}.{1}.{2} {3}:{4}">
+                                    <Binding Path="Date.Day"/>
+                                    <Binding Path="Date.Month"/>
+                                    <Binding Path="Date.Year"/>
+                                    <Binding Path="Date.Hour"/>
+                                    <Binding Path="Date.Minute"/>
+                                </MultiBinding>
+                            </DataGridTextColumn.Binding>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Width="*" Header="Дата прибытия">
+                            <DataGridTextColumn.Binding>
+                                <MultiBinding StringFormat="{}{0}.{1}.{2} {3}:{4}">
+                                    <Binding Path="Arrival.Day"/>
+                                    <Binding Path="Arrival.Month"/>
+                                    <Binding Path="Arrival.Year"/>
+                                    <Binding Path="Arrival.Hour"/>
+                                    <Binding Path="Arrival.Minute"/>
+                                </MultiBinding>
+                            </DataGridTextColumn.Binding>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Liner.AirlinerName}" Width="*" Header="Лайнер"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem x:Name="TabLiners" Header="Самолеты">
+                <DataGrid x:Name="DGridLiners" Grid.Row="0" AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid.ItemContainerStyle>
+                        <Style TargetType="DataGridRow">
+                            <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
+                        </Style>
+                    </DataGrid.ItemContainerStyle>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding AirlinerName}" Width="*" Header="Название лайнера"/>
+                        <DataGridTextColumn Binding="{Binding PassengerCapacity}" Width="*" Header="Количество пассажиров"/>
+                        <DataGridTextColumn Width="*" Header="Дата выпуска">
+                            <DataGridTextColumn.Binding>
+                                <MultiBinding StringFormat="{}{0}.{1}.{2}">
+                                    <Binding Path="ProductionDate.Day"/>
+                                    <Binding Path="ProductionDate.Month"/>
+                                    <Binding Path="ProductionDate.Year"/>
+                                </MultiBinding>
+                            </DataGridTextColumn.Binding>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem x:Name="TabCrewsAndStuffs" Header="Экипажи">
+                <TabControl x:Name="TabCtrlCrewsAndStaffs">
+                    <TabItem x:Name="TabStaffs" Header="Сотрудники">
+                        <DataGrid x:Name="DGridStaffs" Grid.Row="0" AutoGenerateColumns="False" IsReadOnly="True">
+                            <DataGrid.ItemContainerStyle>
+                                <Style TargetType="DataGridRow">
+                                    <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
+                                </Style>
+                            </DataGrid.ItemContainerStyle>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding Crew.Name}" Width="*" Header="Экипаж"/>
+                                <DataGridTextColumn Binding="{Binding Name}" Width="*" Header="ФИО"/>
+                                <DataGridTextColumn Binding="{Binding Post}" Width="*" Header="Должность"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </TabItem>
+                    <TabItem x:Name="TabCrews" Header="Экипажи">
+                        <DataGrid x:Name="DGridCrews" Grid.Row="0" AutoGenerateColumns="False" IsReadOnly="True">
+                            <DataGrid.ItemContainerStyle>
+                                <Style TargetType="DataGridRow">
+                                    <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
+                                </Style>
+                            </DataGrid.ItemContainerStyle>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding Name}" Width="*" Header="Экипаж"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </TabItem>
+                </TabControl>
+            </TabItem>
+            <TabItem x:Name="TabUsers" Header="Пользователи">
+                <DataGrid x:Name="DGridUsers" Grid.Row="0" AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid.ItemContainerStyle>
+                        <Style TargetType="DataGridRow">
+                            <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
+                        </Style>
+                    </DataGrid.ItemContainerStyle>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Role}" Width="*" Header="Роль"/>
+                        <DataGridTextColumn Binding="{Binding Name}" Width="*" Header="ФИО"/>
+                        <DataGridTextColumn Binding="{Binding Password}" Width="*" Header="Пароль"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

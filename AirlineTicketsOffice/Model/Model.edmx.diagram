@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="269ae1414052458baa1a9edc213af2f9" Name="Diagram1">
+        <EntityTypeShape EntityType="AirlinesTicketsOfficeModel.Crew" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirlinesTicketsOfficeModel.Liner" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirlinesTicketsOfficeModel.Passage" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirlinesTicketsOfficeModel.Seat" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirlinesTicketsOfficeModel.Staff" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirlinesTicketsOfficeModel.sysdiagram" Width="1.5" PointX="5.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirlinesTicketsOfficeModel.Ticket" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirlinesTicketsOfficeModel.User" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <AssociationConnector Association="AirlinesTicketsOfficeModel.FK_Passages_Crews" ManuallyRouted="false" />
+        <AssociationConnector Association="AirlinesTicketsOfficeModel.FK_Staff_Crews" ManuallyRouted="false" />
+        <AssociationConnector Association="AirlinesTicketsOfficeModel.FK_Passages_Liners" ManuallyRouted="false" />
+        <AssociationConnector Association="AirlinesTicketsOfficeModel.FK_Seats_Liners" ManuallyRouted="false" />
+        <AssociationConnector Association="AirlinesTicketsOfficeModel.FK_Ticket_Passages" ManuallyRouted="false" />
+        <AssociationConnector Association="AirlinesTicketsOfficeModel.FK_Tickets_Seats" ManuallyRouted="false" />
+        <AssociationConnector Association="AirlinesTicketsOfficeModel.FK_Ticket_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

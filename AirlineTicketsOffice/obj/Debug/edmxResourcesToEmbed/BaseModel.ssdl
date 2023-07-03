@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище AirlinesTicketsOfficeModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Crews">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Liners">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AirlinerName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Year" Type="date" Nullable="false" />
+    <Property Name="Amount" Type="int" Nullable="false" />
+    <Property Name="Repair" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Passages">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Liner_id" Type="int" Nullable="false" />
+    <Property Name="PassageNumber" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Arrival" Type="datetime" Nullable="false" />
+    <Property Name="Seats" Type="bit" Nullable="false" />
+    <Property Name="Places" Type="int" />
+    <Property Name="Crew_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Posts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Post_id" Type="int" Nullable="false" />
+    <Property Name="Crew_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Ticket">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Passage_id" Type="int" Nullable="false" />
+    <Property Name="PassangerName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Passport" Type="nchar" MaxLength="11" Nullable="false" />
+    <Property Name="PassportDate" Type="date" />
+    <Property Name="Till" Type="int" Nullable="false" />
+    <Property Name="Ticket" Type="int" />
+    <Property Name="Chair" Type="int" Nullable="false" />
+    <Property Name="Class" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Registrar_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK_Passages_Crews">
+    <End Role="Crews" Type="Self.Crews" Multiplicity="1" />
+    <End Role="Passages" Type="Self.Passages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Crews">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Passages">
+        <PropertyRef Name="Crew_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Passages_Liners">
+    <End Role="Liners" Type="Self.Liners" Multiplicity="1" />
+    <End Role="Passages" Type="Self.Passages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Liners">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Passages">
+        <PropertyRef Name="Liner_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Staff_Crews">
+    <End Role="Crews" Type="Self.Crews" Multiplicity="1" />
+    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Crews">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Staff">
+        <PropertyRef Name="Crew_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Staff_Posts">
+    <End Role="Posts" Type="Self.Posts" Multiplicity="1" />
+    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Posts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Staff">
+        <PropertyRef Name="Post_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ticket_Passages">
+    <End Role="Passages" Type="Self.Passages" Multiplicity="1" />
+    <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Passages">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="Passage_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ticket_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="Registrar_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище AirlinesTicketsOfficeModelContainer">
+    <EntitySet Name="Crews" EntityType="Self.Crews" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Liners" EntityType="Self.Liners" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Passages" EntityType="Self.Passages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Posts" EntityType="Self.Posts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Staff" EntityType="Self.Staff" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ticket" EntityType="Self.Ticket" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Passages_Crews" Association="Self.FK_Passages_Crews">
+      <End Role="Crews" EntitySet="Crews" />
+      <End Role="Passages" EntitySet="Passages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Passages_Liners" Association="Self.FK_Passages_Liners">
+      <End Role="Liners" EntitySet="Liners" />
+      <End Role="Passages" EntitySet="Passages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Staff_Crews" Association="Self.FK_Staff_Crews">
+      <End Role="Crews" EntitySet="Crews" />
+      <End Role="Staff" EntitySet="Staff" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Staff_Posts" Association="Self.FK_Staff_Posts">
+      <End Role="Posts" EntitySet="Posts" />
+      <End Role="Staff" EntitySet="Staff" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ticket_Passages" Association="Self.FK_Ticket_Passages">
+      <End Role="Passages" EntitySet="Passages" />
+      <End Role="Ticket" EntitySet="Ticket" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ticket_Users" Association="Self.FK_Ticket_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Ticket" EntitySet="Ticket" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

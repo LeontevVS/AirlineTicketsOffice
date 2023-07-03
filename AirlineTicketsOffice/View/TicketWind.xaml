@@ -1,0 +1,138 @@
+﻿<Window x:Class="AirlineTicketsOffice.View.TicketWind"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirlineTicketsOffice.View"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="TicketWind" Height="450" Width="900" WindowStartupLocation="CenterScreen" Closing="Window_Closing" WindowStyle="None" ResizeMode="NoResize" Topmost="True">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="170"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="170"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Margin="0,0,10,0" Text="Рейс" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Margin="0,0,10,0" Text="ФИО Пассажира" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Margin="0,0,10,0" Text="Дата покупки билета" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Margin="0,0,10,0" Text="Серия и номер паспорта" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Margin="0,0,10,0" Text="Дата выдачи паспорта" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Margin="0,0,10,0" Text="Цена" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Margin="0,0,10,0" Text="Номер билета" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBlock Margin="0,0,10,0" Text="Место" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBlock Margin="0,0,10,0" Text="Номер билетной кассы" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBlock Margin="0,0,10,0" Text="Кассир" Grid.Column="2" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <ComboBox SelectedItem="{Binding Passage}" Height="25" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" x:Name="CBPassage">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}№{0} {1} - Отпр. {2}.{3}.{4} {5}:{6}  Приб. {7}.{8}.{9} {10}:{11}">
+                                <Binding Path="PassageNumber"/>
+                                <Binding Path="Title"/>
+                                <Binding Path="Date.Day"/>
+                                <Binding Path="Date.Month"/>
+                                <Binding Path="Date.Year"/>
+                                <Binding Path="Date.Hour"/>
+                                <Binding Path="Date.Minute"/>
+                                <Binding Path="Arrival.Day"/>
+                                <Binding Path="Arrival.Month"/>
+                                <Binding Path="Arrival.Year"/>
+                                <Binding Path="Arrival.Hour"/>
+                                <Binding Path="Arrival.Minute"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBox x:Name="tbName" 
+                 Text="{Binding PassangerName}" 
+                 Height="20" 
+                 Grid.Row="1" Grid.Column="1" 
+                 MaxLength="50"/>
+        <xctk:DateTimePicker x:Name="DPDate" 
+                             Grid.Row="2" Grid.Column="1" 
+                             VerticalAlignment="Center" 
+                             TextAlignment="Left"
+                             Value="{Binding Date}"/>
+        <xctk:MaskedTextBox x:Name="tbPassport"
+                            Text="{Binding Passport}" 
+                            Height="20" 
+                            Grid.Row="3" Grid.Column="1"
+                            MaxLength="11"
+                            Mask="0000 000000"/>
+        <xctk:DateTimePicker x:Name="DPPassportDate"
+                    Grid.Row="4" Grid.Column="1" 
+                    VerticalAlignment="Center" 
+                    Value="{Binding PassportDate}" Format="ShortDate" TextAlignment="Left" TimePickerAllowSpin="False" TimePickerShowButtonSpinner="False" TimePickerVisibility="Hidden" ShowButtonSpinner="False" TimeFormat="ShortDate" CalendarDisplayMode="Decade" ShowDropDownButton="False"/>
+        <!--<DatePicker x:Name="DPPassportDate"
+                    Grid.Row="4" Grid.Column="1" 
+                    VerticalAlignment="Center" 
+                    FirstDayOfWeek="Monday"
+                    Text="{Binding PassportDate}"/>-->
+        <xctk:DecimalUpDown x:Name="dudPrice" Grid.Row="5" Grid.Column="1" 
+                            Value="{Binding Price}" FormatString="F2"
+                            Height="20" ShowButtonSpinner="False" MaxLength="12" Minimum="0" TextAlignment="Left" UpdateValueOnEnterKey="True"/>
+        <TextBox x:Name="tbTicket"
+                 Text="{Binding TicketNumber}" 
+                 Height="20" 
+                 Grid.Row="1" Grid.Column="3"/>
+        <!--<TextBox x:Name="tbChair"
+                 Text="{Binding Chair}" 
+                 Height="20" 
+                 Grid.Row="2" Grid.Column="3" 
+                 MaxLength="3"/>
+        <TextBox x:Name="tbClass"
+                 Text="{Binding Class}" 
+                 Height="20" 
+                 Grid.Row="3" Grid.Column="3" 
+                 MaxLength="1"/>-->
+        <TextBlock x:Name="tbSeat" Text="Не выбрано" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"/>
+        <Button x:Name="btnChooseSeat" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2" Content="Выбор места" Height="25" Width="100" Click="btnChooseSeat_Click"/>
+        <TextBox x:Name="tbTill"
+                 Text="{Binding Till}" 
+                 Height="20" 
+                 Grid.Row="4" Grid.Column="3" 
+                 MaxLength="3"/>
+        <TextBox x:Name="tbUser" 
+                 Text="{Binding User.Name}" 
+                 Height="20" 
+                 Grid.Row="5" Grid.Column="3" IsEnabled="False"/>
+        <StackPanel Grid.Row="6" 
+                    Height="30" 
+                    Grid.ColumnSpan="4"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <Button Content="Сохранить" 
+                    Width="100" 
+                    Height="30"
+                    x:Name="BtnSave" 
+                    Click="BtnSave_Click"
+                    Margin="0,0,5,0"/>
+            <Button Content="Закрыть" 
+                    Width="100" 
+                    Height="30"
+                    x:Name="BtnClose" 
+                    Click="BtnClose_Click"
+                    Margin="5,0,5,0"/>
+            <Button Content="Сохранить и закрыть" 
+                    Width="130" 
+                    Height="30"
+                    x:Name="BtnSaveAndClose" 
+                    Click="BtnSaveAndClose_Click"
+                    Margin="5,0,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,253 @@
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\AirlineTicketsOffice.exe.config
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\AirlineTicketsOffice.exe
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\AirlineTicketsOffice.pdb
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.xml
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.AssemblyReference.cache
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.SuggestedBindingRedirects.cache
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\App.g.cs
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_Content.g.cs
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_MarkupCompile.cache
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_MarkupCompile.lref
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.g.resources
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.Properties.Resources.resources
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.GenerateResource.cache
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.CoreCompileInputs.cache
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.CopyComplete
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.exe
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.pdb
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\MainWindow.g.cs
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\MainWindow.baml
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\LinerWind.g.cs
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\PassageWind.g.cs
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\TicketWind.g.cs
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\LinerWind.baml
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\PassageWind.baml
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\TicketWind.baml
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\AuthorizationWind.g.cs
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\AuthorizationWind.baml
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CreateSeatsWind.g.cs
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CrewWind.g.cs
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\SeatChooseWind.g.cs
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CreateSeatsWind.baml
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CrewWind.baml
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\SeatChooseWind.baml
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\StaffWind.g.cs
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\StaffWind.baml
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\AirlineTicketsOffice.exe.config
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\AirlineTicketsOffice.exe
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\AirlineTicketsOffice.pdb
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.xml
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csprojAssemblyReference.cache
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\AuthorizationWind.g.cs
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CreateSeatsWind.g.cs
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CrewWind.g.cs
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\LinerWind.g.cs
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\MainWindow.g.cs
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\PassageWind.g.cs
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\SeatChooseWind.g.cs
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\StaffWind.g.cs
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\TicketWind.g.cs
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\App.g.cs
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_Content.g.cs
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_MarkupCompile.cache
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_MarkupCompile.lref
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\AuthorizationWind.baml
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CreateSeatsWind.baml
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CrewWind.baml
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\LinerWind.baml
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\MainWindow.baml
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\PassageWind.baml
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\SeatChooseWind.baml
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\StaffWind.baml
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\TicketWind.baml
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.g.resources
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.Properties.Resources.resources
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.GenerateResource.cache
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.CoreCompileInputs.cache
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.CopyComplete
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.exe
+C:\Users\KIA\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.pdb
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\UsersWind.g.cs
+C:\Users\leont\source\repos\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\UsersWind.baml
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\AirlineTicketsOffice.exe.config
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\AirlineTicketsOffice.exe
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\AirlineTicketsOffice.pdb
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.xml
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.AssemblyReference.cache
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.SuggestedBindingRedirects.cache
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\AuthorizationWind.g.cs
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CreateSeatsWind.g.cs
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CrewWind.g.cs
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\LinerWind.g.cs
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\MainWindow.g.cs
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\PassageWind.g.cs
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\SeatChooseWind.g.cs
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\UsersWind.g.cs
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\StaffWind.g.cs
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\TicketWind.g.cs
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\App.g.cs
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_Content.g.cs
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_MarkupCompile.cache
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_MarkupCompile.lref
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\AuthorizationWind.baml
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CreateSeatsWind.baml
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CrewWind.baml
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\LinerWind.baml
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\MainWindow.baml
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\PassageWind.baml
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\SeatChooseWind.baml
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\UsersWind.baml
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\StaffWind.baml
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\TicketWind.baml
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.g.resources
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.Properties.Resources.resources
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.GenerateResource.cache
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.CoreCompileInputs.cache
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.CopyComplete
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.exe
+C:\Users\leont\Desktop\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.pdb
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.AssemblyReference.cache
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.SuggestedBindingRedirects.cache
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\AuthorizationWind.g.cs
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CreateSeatsWind.g.cs
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CrewWind.g.cs
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\LinerWind.g.cs
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\MainWindow.g.cs
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\PassageWind.g.cs
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\SeatChooseWind.g.cs
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\UsersWind.g.cs
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\StaffWind.g.cs
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\TicketWind.g.cs
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\App.g.cs
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_Content.g.cs
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_MarkupCompile.cache
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_MarkupCompile.lref
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.exe
+J:\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.pdb
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\AirlinesTicketsOffice.mdf
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\AirlinesTicketsOffice_log.ldf
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.xml
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.AssemblyReference.cache
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.SuggestedBindingRedirects.cache
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\AuthorizationWind.g.cs
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CreateSeatsWind.g.cs
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CrewWind.g.cs
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\LinerWind.g.cs
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\MainWindow.g.cs
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\PassageWind.g.cs
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\SeatChooseWind.g.cs
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\UsersWind.g.cs
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\StaffWind.g.cs
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\TicketWind.g.cs
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\App.g.cs
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_Content.g.cs
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_MarkupCompile.cache
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice_MarkupCompile.lref
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\AuthorizationWind.baml
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CreateSeatsWind.baml
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\CrewWind.baml
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\LinerWind.baml
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\MainWindow.baml
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\PassageWind.baml
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\SeatChooseWind.baml
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\UsersWind.baml
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\StaffWind.baml
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\View\TicketWind.baml
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.g.resources
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.Properties.Resources.resources
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.GenerateResource.cache
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.CoreCompileInputs.cache
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.csproj.CopyComplete
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.exe
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\obj\Debug\AirlineTicketsOffice.pdb
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\AirlineTicketsOffice.exe.config
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\AirlineTicketsOffice.exe
+C:\Users\leont\Desktop\Курсовые\Курсач 11.10.22\AirlineTicketsOffice\AirlineTicketsOffice\bin\Debug\AirlineTicketsOffice.pdb

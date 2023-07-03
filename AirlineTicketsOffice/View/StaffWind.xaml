@@ -1,0 +1,70 @@
+﻿<Window x:Class="AirlineTicketsOffice.View.StaffWind"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirlineTicketsOffice.View"
+        mc:Ignorable="d"
+        Title="StaffWind" Height="400" Width="750" WindowStartupLocation="CenterScreen" Closing="Window_Closing" WindowStyle="None" ResizeMode="NoResize" Topmost="True">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Сотрудник" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="ФИО" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Должность" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Экипаж" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        <TextBox x:Name="tbName" 
+                 Text="{Binding Name}" 
+                 Height="20" 
+                 Grid.Row="1" Grid.Column="1" 
+                 MaxLength="50"
+                 Width="500"/>
+        <ComboBox SelectedItem="{Binding Post}" x:Name="cbPost" Grid.Column="1" Grid.Row="2" Height="25" Width="500"/>
+        <ComboBox SelectedItem="{Binding Crew}" x:Name="cbCrew" Grid.Column="1" Grid.Row="3" Height="25" Width="500">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0}">
+                                <Binding Path="Name"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <StackPanel Grid.Row="4" 
+                    Height="30" 
+                    Grid.ColumnSpan="4"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <Button Content="Сохранить" 
+                    Width="100" 
+                    Height="30"
+                    x:Name="BtnSave" 
+                    Click="BtnSave_Click"
+                    Margin="0,0,5,0"/>
+            <Button Content="Закрыть" 
+                    Width="100" 
+                    Height="30"
+                    x:Name="BtnClose" 
+                    Click="BtnClose_Click"
+                    Margin="5,0,5,0"/>
+            <Button Content="Сохранить и закрыть" 
+                    Width="130" 
+                    Height="30"
+                    x:Name="BtnSaveAndClose" 
+                    Click="BtnSaveAndClose_Click"
+                    Margin="5,0,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AirlinesTicketsOfficeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Crews">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Passages" Relationship="Self.FK_Passages_Crews" FromRole="Crews" ToRole="Passages" />
+    <NavigationProperty Name="Staff" Relationship="Self.FK_Staff_Crews" FromRole="Crews" ToRole="Staff" />
+  </EntityType>
+  <EntityType Name="Liners">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AirlinerName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Year" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Amount" Type="Int32" Nullable="false" />
+    <Property Name="Repair" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Passages" Relationship="Self.FK_Passages_Liners" FromRole="Liners" ToRole="Passages" />
+  </EntityType>
+  <EntityType Name="Passages">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Liner_id" Type="Int32" Nullable="false" />
+    <Property Name="PassageNumber" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Arrival" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Seats" Type="Boolean" Nullable="false" />
+    <Property Name="Places" Type="Int32" />
+    <Property Name="Crew_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Crews" Relationship="Self.FK_Passages_Crews" FromRole="Passages" ToRole="Crews" />
+    <NavigationProperty Name="Liners" Relationship="Self.FK_Passages_Liners" FromRole="Passages" ToRole="Liners" />
+    <NavigationProperty Name="Ticket" Relationship="Self.FK_Ticket_Passages" FromRole="Passages" ToRole="Ticket" />
+  </EntityType>
+  <EntityType Name="Posts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Staff" Relationship="Self.FK_Staff_Posts" FromRole="Posts" ToRole="Staff" />
+  </EntityType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Post_id" Type="Int32" Nullable="false" />
+    <Property Name="Crew_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Crews" Relationship="Self.FK_Staff_Crews" FromRole="Staff" ToRole="Crews" />
+    <NavigationProperty Name="Posts" Relationship="Self.FK_Staff_Posts" FromRole="Staff" ToRole="Posts" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Ticket">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Passage_id" Type="Int32" Nullable="false" />
+    <Property Name="PassangerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Passport" Type="String" MaxLength="11" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="PassportDate" Type="DateTime" Precision="0" />
+    <Property Name="Till" Type="Int32" Nullable="false" />
+    <Property Name="Ticket1" Type="Int32" />
+    <Property Name="Chair" Type="Int32" Nullable="false" />
+    <Property Name="Class" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Registrar_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Passages" Relationship="Self.FK_Ticket_Passages" FromRole="Ticket" ToRole="Passages" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_Ticket_Users" FromRole="Ticket" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Ticket" Relationship="Self.FK_Ticket_Users" FromRole="Users" ToRole="Ticket" />
+  </EntityType>
+  <Association Name="FK_Passages_Crews">
+    <End Role="Crews" Type="Self.Crews" Multiplicity="1" />
+    <End Role="Passages" Type="Self.Passages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Crews">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Passages">
+        <PropertyRef Name="Crew_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Staff_Crews">
+    <End Role="Crews" Type="Self.Crews" Multiplicity="1" />
+    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Crews">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Staff">
+        <PropertyRef Name="Crew_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Passages_Liners">
+    <End Role="Liners" Type="Self.Liners" Multiplicity="1" />
+    <End Role="Passages" Type="Self.Passages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Liners">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Passages">
+        <PropertyRef Name="Liner_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ticket_Passages">
+    <End Role="Passages" Type="Self.Passages" Multiplicity="1" />
+    <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Passages">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="Passage_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Staff_Posts">
+    <End Role="Posts" Type="Self.Posts" Multiplicity="1" />
+    <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Posts">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Staff">
+        <PropertyRef Name="Post_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ticket_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="Registrar_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AirlinesTicketsOfficeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Crews" EntityType="Self.Crews" />
+    <EntitySet Name="Liners" EntityType="Self.Liners" />
+    <EntitySet Name="Passages" EntityType="Self.Passages" />
+    <EntitySet Name="Posts" EntityType="Self.Posts" />
+    <EntitySet Name="Staff" EntityType="Self.Staff" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Ticket" EntityType="Self.Ticket" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK_Passages_Crews" Association="Self.FK_Passages_Crews">
+      <End Role="Crews" EntitySet="Crews" />
+      <End Role="Passages" EntitySet="Passages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Staff_Crews" Association="Self.FK_Staff_Crews">
+      <End Role="Crews" EntitySet="Crews" />
+      <End Role="Staff" EntitySet="Staff" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Passages_Liners" Association="Self.FK_Passages_Liners">
+      <End Role="Liners" EntitySet="Liners" />
+      <End Role="Passages" EntitySet="Passages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ticket_Passages" Association="Self.FK_Ticket_Passages">
+      <End Role="Passages" EntitySet="Passages" />
+      <End Role="Ticket" EntitySet="Ticket" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Staff_Posts" Association="Self.FK_Staff_Posts">
+      <End Role="Posts" EntitySet="Posts" />
+      <End Role="Staff" EntitySet="Staff" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ticket_Users" Association="Self.FK_Ticket_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Ticket" EntitySet="Ticket" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
